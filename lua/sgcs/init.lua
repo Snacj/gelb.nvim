@@ -2,14 +2,14 @@ local M = {}
 
 function M.setup()
     local colors = {
-        bg = "#2b2b2b",
+        bg = "#242424",
         fg = "#e0e0e0",
 
         black = "#1f1f1f",
         gray = "#5a5a5a",
 
         green = "#6b9e78",
-        yellow = "#c9b36a",
+        yellow = "#E4D329",
         red = "#c46a6a",
 
         blue = "#8fbcd4",
