@@ -6,7 +6,7 @@ function M.setup()
         fg = "#e0e0e0",
 
         black = "#1f1f1f",
-        gray = "#3a3a3a",
+        gray = "#5a5a5a",
 
         green = "#6b9e78",
         yellow = "#c9b36a",
@@ -86,6 +86,16 @@ function M.setup()
         ["@punctuation.special"] = { fg = colors.red },
 
         -- UI
+        Cursor = {
+            fg = colors.bg,
+            bg = colors.yellow,
+        },
+
+        CursorIM = {
+            fg = colors.bg,
+            bg = colors.yellow,
+        },
+
         CursorLine = { bg = colors.black },
         Visual = { bg = colors.gray },
         LineNr = { fg = colors.gray },
