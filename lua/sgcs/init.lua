@@ -2,7 +2,7 @@ local M = {}
 
 function M.setup()
     local colors = {
-        bg = "#242424",
+        bg = "#181818",
         fg = "#e0e0e0",
 
         black = "#1f1f1f",
@@ -41,26 +41,26 @@ function M.setup()
         Identifier = { fg = colors.fg },
         Variable = { fg = colors.fg },
 
-        Constant = { fg = colors.yellow },
+        Constant = { fg = colors.red },
 
         Type = { fg = colors.cyan },
         StorageClass = { fg = colors.cyan },
         Structure = { fg = colors.cyan },
 
-        Operator = { fg = colors.gray },
+        Operator = { fg = colors.fg },
 
         -- Treesitter groups
         ["@variable"] = { fg = colors.fg },
         ["@variable.builtin"] = { fg = colors.red },
 
-        ["@function"] = { fg = colors.blue },
-        ["@function.call"] = { fg = colors.blue },
+        ["@function"] = { fg = colors.yellow },
+        ["@function.call"] = { fg = colors.yellow },
 
         ["@method"] = { fg = colors.blue },
         ["@constructor"] = { fg = colors.cyan },
 
         ["@keyword"] = { fg = colors.purple },
-        ["@keyword.function"] = { fg = colors.purple },
+        ["@keyword.function"] = { fg = colors.yellow },
 
         ["@string"] = { fg = colors.green },
         ["@string.escape"] = { fg = colors.red },
@@ -71,18 +71,18 @@ function M.setup()
         ["@type"] = { fg = colors.cyan },
         ["@type.builtin"] = { fg = colors.cyan },
 
-        ["@constant"] = { fg = colors.yellow },
+        ["@constant"] = { fg = colors.red },
         ["@constant.builtin"] = { fg = colors.red },
 
         ["@comment"] = { fg = colors.gray, italic = true },
 
-        ["@operator"] = { fg = colors.gray },
+        ["@operator"] = { fg = colors.fg },
 
         ["@property"] = { fg = colors.fg },
         ["@field"] = { fg = colors.fg },
 
-        ["@punctuation.delimiter"] = { fg = colors.gray },
-        ["@punctuation.bracket"] = { fg = colors.gray },
+        ["@punctuation.delimiter"] = { fg = colors.fg },
+        ["@punctuation.bracket"] = { fg = colors.fg },
         ["@punctuation.special"] = { fg = colors.red },
 
         -- UI
