@@ -8,14 +8,22 @@ function M.setup()
         black = "#1f1f1f",
         gray = "#5a5a5a",
 
-        green = "#6b9e78",
-        yellow = "#E4D329",
-        red = "#c46a6a",
+        green = "#8ab17d",
+        yellow = "#e9c46a",
+        red = "#e76f51",
+        blue = "#264653",
+        cyan = "#2a9d8f",
+        purple = "#287271",
+        orange = "#f4a261",
 
-        blue = "#8fbcd4",
-        cyan = "#7fbfb3",
-        purple = "#a58fd6",
-        orange = "#d19a66",
+        -- green = "#6b9e78",
+        -- yellow = "#E4D329",
+        -- red = "#c46a6a",
+        --
+        -- blue = "#8fbcd4",
+        -- cyan = "#7fbfb3",
+        -- purple = "#a58fd6",
+        -- orange = "#d19a66",
     }
 
     -- Treesitter-based highlights
