@@ -51,9 +51,9 @@ function M.setup()
 
         Constant = { fg = colors.red },
 
-        Type = { fg = colors.cyan },
-        StorageClass = { fg = colors.cyan },
-        Structure = { fg = colors.cyan },
+        Type = { fg = colors.yellow },
+        StorageClass = { fg = colors.yellow },
+        Structure = { fg = colors.yellow },
 
         Operator = { fg = colors.fg },
 
@@ -64,8 +64,8 @@ function M.setup()
         ["@function"] = { fg = colors.yellow },
         ["@function.call"] = { fg = colors.yellow },
 
-        ["@method"] = { fg = colors.blue },
-        ["@constructor"] = { fg = colors.cyan },
+        ["@method"] = { fg = colors.yellow },
+        ["@constructor"] = { fg = colors.red },
 
         ["@keyword"] = { fg = colors.purple },
         ["@keyword.function"] = { fg = colors.yellow },
