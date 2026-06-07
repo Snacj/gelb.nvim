@@ -31,7 +31,7 @@ function M.setup()
         Normal = { fg = colors.fg, bg = colors.bg },
 
         -- Core syntax
-        Comment = { fg = colors.gray, italic = true },
+        Comment = { fg = colors.gry, italic = true },
         String = { fg = colors.green },
         Character = { fg = colors.green },
 
@@ -67,7 +67,7 @@ function M.setup()
         ["@method"] = { fg = colors.yellow },
         ["@constructor"] = { fg = colors.red },
 
-        ["@keyword"] = { fg = colors.purple },
+        ["@keyword"] = { fg = colors.yellow },
         ["@keyword.function"] = { fg = colors.yellow },
 
         ["@string"] = { fg = colors.green },
