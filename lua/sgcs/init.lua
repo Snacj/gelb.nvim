@@ -42,7 +42,7 @@ function M.setup()
         Function = { fg = colors.yellow },
         Method = { fg = colors.yellow },
 
-        Keyword = { fg = colors.purple },
+        Keyword = { fg = colors.yellow },
         Conditional = { fg = colors.purple },
         Repeat = { fg = colors.purple },
 
