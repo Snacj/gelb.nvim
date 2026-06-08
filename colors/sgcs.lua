@@ -1,1 +1,0 @@
-require("sgcs").setup()
