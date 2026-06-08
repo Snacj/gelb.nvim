@@ -16,21 +16,18 @@ function M.setup()
         gray      = "#504945",
         gray_lite = "#665c54",
 
-        -- Accent palette  (yellow family dominates)
-        yellow    = "#e0aa45",
+        -- Cursor
         gold      = "#d8a657",
-        amber     = "#c18f49",
-        cream     = "#e8c87e",
 
-        -- Supporting (earthy, subdued)
-        green     = "#a9b665",
-        aqua      = "#89b482",
+        -- New spread palette
+        rose      = "#d3869b",
+        sage      = "#a9b665",
+        green     = "#89b482",
         orange    = "#e78a4e",
-        red       = "#ea6962",
-        purple    = "#d3869b",
         blue      = "#7daea3",
+        amber     = "#c18f49",
+        red       = "#ea6962",
     }
-
 
     local highlights = {
 
@@ -69,27 +66,27 @@ function M.setup()
         WinSeparator = { fg = colors.gray },
         VertSplit    = { fg = colors.gray },
 
-        Search       = { fg = colors.bg,       bg = colors.cream },
+        Search       = { fg = colors.bg,       bg = colors.gold },
         IncSearch    = { fg = colors.bg,       bg = colors.orange },
         CurSearch    = { fg = colors.bg,       bg = colors.orange,   bold = true },
         Substitute   = { fg = colors.bg,       bg = colors.orange },
 
-        MatchParen   = { fg = colors.cream,    bold = true, underline = true },
+        MatchParen   = { fg = colors.gold,     bold = true, underline = true },
 
         DiagnosticError = { fg = colors.red },
         DiagnosticWarn  = { fg = colors.orange },
         DiagnosticInfo  = { fg = colors.blue },
-        DiagnosticHint  = { fg = colors.aqua },
+        DiagnosticHint  = { fg = colors.green },
 
         DiagnosticUnderlineError = { undercurl = true, sp = colors.red },
         DiagnosticUnderlineWarn  = { undercurl = true, sp = colors.orange },
         DiagnosticUnderlineInfo  = { undercurl = true, sp = colors.blue },
-        DiagnosticUnderlineHint  = { undercurl = true, sp = colors.aqua },
+        DiagnosticUnderlineHint  = { undercurl = true, sp = colors.green },
 
-        Directory    = { fg = colors.gold },
+        Directory    = { fg = colors.blue },
         Title        = { fg = colors.gold,     bold = true },
         Question     = { fg = colors.gold },
-        MoreMsg      = { fg = colors.gold },
+        MoreMsg      = { fg = colors.green },
         WarningMsg   = { fg = colors.orange },
         ErrorMsg     = { fg = colors.red,      bold = true },
 
@@ -112,30 +109,30 @@ function M.setup()
         Character   = { fg = colors.green },
 
         Number      = { fg = colors.orange },
-        Boolean     = { fg = colors.orange },
+        Boolean     = { fg = colors.red },
         Float       = { fg = colors.orange },
 
-        Function    = { fg = colors.gold,      bold = true },
+        Function    = { fg = colors.sage,      bold = true },
         Identifier  = { fg = colors.fg },
 
-        Keyword     = { fg = colors.yellow },
-        Conditional = { fg = colors.yellow },
-        Repeat      = { fg = colors.yellow },
-        Label       = { fg = colors.yellow },
-        Exception   = { fg = colors.yellow },
-        Statement   = { fg = colors.yellow },
+        Keyword     = { fg = colors.rose },
+        Conditional = { fg = colors.rose },
+        Repeat      = { fg = colors.rose },
+        Label       = { fg = colors.rose },
+        Exception   = { fg = colors.rose },
+        Statement   = { fg = colors.rose },
 
         Constant    = { fg = colors.orange },
-        Type        = { fg = colors.cream },
-        StorageClass = { fg = colors.yellow },
-        Structure   = { fg = colors.cream },
-        Typedef     = { fg = colors.cream },
+        Type        = { fg = colors.blue },
+        StorageClass = { fg = colors.rose },
+        Structure   = { fg = colors.blue },
+        Typedef     = { fg = colors.blue },
 
         Operator    = { fg = colors.fg_dim },
         Delimiter   = { fg = colors.fg_dim },
         Special     = { fg = colors.amber },
         SpecialChar = { fg = colors.amber },
-        Tag         = { fg = colors.gold },
+        Tag         = { fg = colors.sage },
 
         PreProc     = { fg = colors.amber },
         Include     = { fg = colors.amber },
@@ -149,30 +146,30 @@ function M.setup()
 
         --  Tree-sitter
         ["@variable"]         = { fg = colors.fg },
-        ["@variable.builtin"] = { fg = colors.orange },
+        ["@variable.builtin"] = { fg = colors.red },
         ["@variable.member"]  = { fg = colors.fg },
 
         ["@parameter"]        = { fg = colors.fg },
 
-        ["@function"]         = { fg = colors.gold,    bold = true },
-        ["@function.call"]    = { fg = colors.gold },
-        ["@function.builtin"] = { fg = colors.gold },
+        ["@function"]         = { fg = colors.sage,    bold = true },
+        ["@function.call"]    = { fg = colors.sage },
+        ["@function.builtin"] = { fg = colors.sage },
         ["@function.macro"]   = { fg = colors.amber },
 
-        ["@method"]           = { fg = colors.gold },
-        ["@method.call"]      = { fg = colors.gold },
-        ["@constructor"]      = { fg = colors.cream },
+        ["@method"]           = { fg = colors.sage },
+        ["@method.call"]      = { fg = colors.sage },
+        ["@constructor"]      = { fg = colors.blue },
 
         ["@property"]         = { fg = colors.fg },
         ["@field"]            = { fg = colors.fg },
 
-        ["@namespace"]        = { fg = colors.cream },
-        ["@module"]           = { fg = colors.cream },
+        ["@namespace"]        = { fg = colors.blue },
+        ["@module"]           = { fg = colors.blue },
 
-        ["@type"]             = { fg = colors.cream },
-        ["@type.builtin"]     = { fg = colors.cream,   italic = true },
-        ["@type.definition"]  = { fg = colors.cream },
-        ["@type.qualifier"]   = { fg = colors.yellow },
+        ["@type"]             = { fg = colors.blue },
+        ["@type.builtin"]     = { fg = colors.blue,    italic = true },
+        ["@type.definition"]  = { fg = colors.blue },
+        ["@type.qualifier"]   = { fg = colors.rose },
 
         ["@constant"]         = { fg = colors.orange },
         ["@constant.builtin"] = { fg = colors.orange },
@@ -185,30 +182,30 @@ function M.setup()
 
         ["@number"]           = { fg = colors.orange },
         ["@number.float"]     = { fg = colors.orange },
-        ["@boolean"]          = { fg = colors.orange },
+        ["@boolean"]          = { fg = colors.red },
 
         ["@comment"]          = { fg = colors.gray_lite, italic = true },
-        ["@comment.todo"]     = { fg = colors.bg, bg = colors.gold, bold = true },
-        ["@comment.note"]     = { fg = colors.bg, bg = colors.blue, bold = true },
+        ["@comment.todo"]     = { fg = colors.bg, bg = colors.gold,   bold = true },
+        ["@comment.note"]     = { fg = colors.bg, bg = colors.blue,   bold = true },
         ["@comment.warning"]  = { fg = colors.bg, bg = colors.orange, bold = true },
-        ["@comment.error"]    = { fg = colors.bg, bg = colors.red, bold = true },
+        ["@comment.error"]    = { fg = colors.bg, bg = colors.red,    bold = true },
 
         ["@operator"]         = { fg = colors.fg_dim },
 
-        ["@keyword"]          = { fg = colors.yellow },
-        ["@keyword.function"] = { fg = colors.yellow,  italic = true },
-        ["@keyword.return"]   = { fg = colors.yellow },
-        ["@keyword.import"]   = { fg = colors.amber },
-        ["@keyword.operator"] = { fg = colors.yellow },
-        ["@keyword.modifier"] = { fg = colors.yellow },
-        ["@keyword.conditional"] = { fg = colors.yellow },
-        ["@keyword.repeat"]   = { fg = colors.yellow },
-        ["@keyword.exception"] = { fg = colors.yellow },
+        ["@keyword"]              = { fg = colors.rose },
+        ["@keyword.function"]     = { fg = colors.rose,   italic = true },
+        ["@keyword.return"]       = { fg = colors.rose },
+        ["@keyword.import"]       = { fg = colors.amber },
+        ["@keyword.operator"]     = { fg = colors.rose },
+        ["@keyword.modifier"]     = { fg = colors.rose },
+        ["@keyword.conditional"]  = { fg = colors.rose },
+        ["@keyword.repeat"]       = { fg = colors.rose },
+        ["@keyword.exception"]    = { fg = colors.rose },
 
-        ["@tag"]              = { fg = colors.gold },
-        ["@tag.attribute"]    = { fg = colors.amber },
+        ["@tag"]              = { fg = colors.sage },
+        ["@tag.attribute"]    = { fg = colors.blue },
         ["@tag.delimiter"]    = { fg = colors.gray_lite },
-        ["@tag.builtin"]      = { fg = colors.gold },
+        ["@tag.builtin"]      = { fg = colors.sage },
 
         ["@attribute"]        = { fg = colors.amber },
         ["@label"]            = { fg = colors.amber },
@@ -217,11 +214,11 @@ function M.setup()
         ["@punctuation.bracket"]   = { fg = colors.fg_dim },
         ["@punctuation.special"]   = { fg = colors.amber },
 
-        ["@markup.heading"]   = { fg = colors.gold,  bold = true },
+        ["@markup.heading"]   = { fg = colors.gold,   bold = true },
         ["@markup.bold"]      = { bold = true },
         ["@markup.italic"]    = { italic = true },
-        ["@markup.link"]      = { fg = colors.blue,  underline = true },
-        ["@markup.link.url"]  = { fg = colors.blue,  underline = true },
+        ["@markup.link"]      = { fg = colors.blue,   underline = true },
+        ["@markup.link.url"]  = { fg = colors.blue,   underline = true },
         ["@markup.raw"]       = { fg = colors.green },
         ["@markup.list"]      = { fg = colors.amber },
 
@@ -243,19 +240,19 @@ function M.setup()
         ["@lsp.type.macro"]      = { link = "@function.macro" },
         ["@lsp.mod.deprecated"]  = { strikethrough = true },
 
-        --  Git signs / gutter
+        --  Git signs
         GitSignsAdd    = { fg = colors.green },
         GitSignsChange = { fg = colors.gold },
         GitSignsDelete = { fg = colors.red },
 
-        --  Telescope (if present)
+        --  Telescope
         TelescopeNormal       = { fg = colors.fg,       bg = colors.bg },
         TelescopeBorder       = { fg = colors.gray_lite, bg = colors.bg },
         TelescopePromptPrefix = { fg = colors.gold },
-        TelescopeMatching     = { fg = colors.cream,     bold = true },
+        TelescopeMatching     = { fg = colors.sage,      bold = true },
         TelescopeSelection    = { bg = colors.bg_dim },
 
-        --  Indent-blankline / mini.indentscope
+        --  Indent guides
         IblIndent = { fg = "#2a2a2a" },
         IblScope  = { fg = colors.gray },
         MiniIndentscopeSymbol = { fg = colors.gray },
